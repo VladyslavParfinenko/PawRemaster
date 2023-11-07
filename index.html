@@ -171,7 +171,7 @@
                   </button>
                   <!-- <div class="modal-container"> -->
                   <b class="modal-tittle">Залиште свої дані, ми вам передзвонимо</b>
-                  <form class="modal-form js-speaker-form">
+                  <form class="modal-form js-speaker-form" id="tg">
                     <label for="name" class="under">Ім'я</label>
                     <div class="form-field">
                       <input type="text" class="form-input" name="name" id="name" />
@@ -690,20 +690,12 @@
         <!--=============== SWIPER JS ===============-->
         <script src="./assets/js/swiper-bundle.min.js"></script>
 
-        <script>
-            (() => {
-              document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-                e.preventDefault();
-      
-                new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
-      
-                e.currentTarget.reset();
-              });
-            })();
-          </script>
+        
         <script src="./assets/js/modal.js"></script>
         <!--=============== MAIN JS ===============-->
         <script src="./assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="./assets/js/tg.js"></script>
         
     </body>
 </html>
