@@ -1467,6 +1467,7 @@ justify-content: center;
 width: 200px;
 height: 50px;
 margin: 0 auto;
+margin-top: 10px;
 
 border-color:transparent;
 background-color:grey;
@@ -1541,4 +1542,11 @@ transition:box-shadow 250ms cubic-bezier(0.4,0,0.2,1),background-color 250ms cub
 
 .modal__link:hover {
   color: var(--first-color);
+}
+.modal__alert{
+  text-align: center;
+  background-color:var(--first-color);
+  color:#212121;
+  border-radius:2%;
+  
 }
