@@ -162,6 +162,45 @@
 
         <!--==================== MAIN ====================-->
         <main class="main">
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                  <button class="modal-button" data-modal-close name="close-button">
+                    <svg class="modal-icon" width="11" height="11">
+                      <use href="./assets/img/icons.svg#icon-close-btn"></use>
+                    </svg>
+                  </button>
+                  <!-- <div class="modal-container"> -->
+                  <b class="modal-tittle">Залиште свої дані, ми вам передзвонимо</b>
+                  <form class="modal-form js-speaker-form">
+                    <label for="name" class="under">Ім'я</label>
+                    <div class="form-field">
+                      <input type="text" class="form-input" name="name" id="name" />
+                      <svg width="18" height="18" class="form-icon">
+                        <use href="./assets/img/icons.svg#icon-person-black-18dp-1"></use>
+                      </svg>
+                    </div>
+                    <label for="tel" class="under">Телефон</label>
+                    <div class="form-field">
+                      <input type="tel" class="form-input" name="tel" id="tel" />
+                      <svg width="18" height="18" class="form-icon">
+                        <use href="./assets/img/icons.svg#icon-phone-black-18dp-1"></use>
+                      </svg>
+                    </div>
+                    
+                    <label for="comment" class="under">Коментар</label>
+                    <textarea
+                      class="form-area"
+                      placeholder="Введіть текст"
+                      name="comment"
+                      id="comment"
+                    ></textarea>
+                    <p class="modal__phone">Або зателефонуйте нам по телефону: <br> <a href="tel:+380637125220" class="modal__link">+380637125220</a></p>
+                    
+                    <button type="submit" class="button-send">Відправити</button>
+                  </form>
+                  <!-- </div> -->
+                </div>
+              </div>
             <!--==================== HOME ====================-->
             <section class="home" id="home">
                 <div class="home__container container grid">
@@ -354,8 +393,8 @@
                         <h3 class="products__title">Adventure White</h3>
                         <span class="products__price">1699грн</span>
                         <span class="products__old-price">2700грн</span>
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
+                        <button class="products__button" data-modal-open>Замовити
+                            <i class='bx bxs-phone-call' ></i>
                         </button>
                     </article>
 
@@ -365,8 +404,8 @@
                         <h3 class="products__title">Adventure White2</h3>
                         <span class="products__price">1699грн</span>
                         <span class="products__old-price">2700грн</span>
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
+                        <button class="products__button" data-modal-open>Замовити
+                            <i class='bx bxs-phone-call' ></i>
                         </button>
                     </article>
 
@@ -376,8 +415,8 @@
                         <h3 class="products__title">Adventure Black</h3>
                         <span class="products__price">1699грн</span>
                         <span class="products__old-price">2700грн</span>
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
+                        <button class="products__button" data-modal-open>Замовити
+                            <i class='bx bxs-phone-call' ></i>
                         </button>
                     </article>
 
@@ -387,8 +426,8 @@
                         <h3 class="products__title">Adventure Grey</h3>
                         <span class="products__price">1699грн</span>
                         <span class="products__old-price">2700грн</span>
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
+                        <button class="products__button" data-modal-open>Замовити
+                            <i class='bx bxs-phone-call' ></i>
                         </button>
                     </article>
 
@@ -398,8 +437,8 @@
                         <h3 class="products__title">Adventure Green</h3>
                         <span class="products__price">1699грн</span>
                         <span class="products__old-price">2700грн</span>
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
+                        <button class="products__button" data-modal-open>Замовити
+                            <i class='bx bxs-phone-call' ></i>
                         </button>
                     </article>
                     <article class="products__card">
@@ -409,8 +448,8 @@
                      <span class="products__price">1699грн</span>
                      <span class="products__old-price">2700грн</span>
 
-                     <button class="products__button">
-                         <i class='bx bx-shopping-bag'></i>
+                     <button class="products__button" data-modal-open>Замовити
+                        <i class='bx bxs-phone-call' ></i>
                      </button>
                  </article>
                 </div>
@@ -642,45 +681,7 @@
             </div>
 
         </footer>
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="modal-button" data-modal-close name="close-button">
-                <svg class="modal-icon" width="11" height="11">
-                  <use href="./assets/img/icons.svg#icon-close-btn"></use>
-                </svg>
-              </button>
-              <!-- <div class="modal-container"> -->
-              <b class="modal-tittle">Залиште свої дані, ми вам передзвонимо</b>
-              <form class="modal-form js-speaker-form">
-                <label for="name" class="under">Ім'я</label>
-                <div class="form-field">
-                  <input type="text" class="form-input" name="name" id="name" />
-                  <svg width="18" height="18" class="form-icon">
-                    <use href="./assets/img/icons.svg#icon-person-black-18dp-1"></use>
-                  </svg>
-                </div>
-                <label for="tel" class="under">Телефон</label>
-                <div class="form-field">
-                  <input type="tel" class="form-input" name="tel" id="tel" />
-                  <svg width="18" height="18" class="form-icon">
-                    <use href="./assets/img/icons.svg#icon-phone-black-18dp-1"></use>
-                  </svg>
-                </div>
-                
-                <label for="comment" class="under">Коментар</label>
-                <textarea
-                  class="form-area"
-                  placeholder="Введіть текст"
-                  name="comment"
-                  id="comment"
-                ></textarea>
-      
-                
-                <button type="submit" class="button-send">Відправити</button>
-              </form>
-              <!-- </div> -->
-            </div>
-          </div>
+        
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
