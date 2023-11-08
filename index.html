@@ -1,74 +1,106 @@
- <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-        <!--=============== SWIPER CSS ===============--> 
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" /> -->
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        
-        
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" /> -->
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <title>PawBags</title>
-    </head>
-    <body class="dark-theme">
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                  <img src="./assets/img/favicon.png" width="15px" alt="">
-                    <!-- <i class='bx bxs-watch nav__logo-icon'></i> -->
-                   PawBags
-                </a>
+    <title>PawBags</title>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Головна</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#featured" class="nav__link">Популярні</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#products" class="nav__link">Сумки</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#new" class="nav__link">Про нас</a>
-                        </li>
-                    </ul>
+    <!-- Meta Pixel Code
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1336990340270456');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1336990340270456&ev=PageView&noscript=1"
+    />
+    </noscript> -->
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body class="dark-theme">
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./assets/img/favicon.png" width="15px" alt="" />
+          <!-- <i class='bx bxs-watch nav__logo-icon'></i> -->
+          PawBags
+        </a>
 
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x' ></i>
-                    </div>
-                </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Популярні</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Сумки</a>
+            </li>
+            <li class="nav__item">
+              <a href="#new" class="nav__link">Про нас</a>
+            </li>
+          </ul>
 
-                <div class="nav__btns">
-                    <!-- Theme change button -->
-                    <a href="tel:+380637125220" class="nav__link">+380637125220</a>
-                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
 
-                    <!-- <div class="nav__shop" id="cart-shop">
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <a href="tel:+380637125220" class="nav__link">+380637125220</a>
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+          <!-- <div class="nav__shop" id="cart-shop">
                         <i class='bx bx-shopping-bag' ></i>
                     </div> -->
-                    
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class='bx bx-grid-alt' ></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
 
-        <!--==================== CART ====================-->
-        <!-- <div class="cart" id="cart">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <!-- <div class="cart" id="cart">
             <i class='bx bx-x cart__close' id="cart-close"></i>
 
             <h2 class="cart__title-center">My Cart</h2>
@@ -162,463 +194,468 @@
             </div>
         </div> -->
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                  <button class="modal-button" data-modal-close name="close-button">
-                    <svg class="modal-icon" width="11" height="11">
-                      <use href="./assets/img/icons.svg#icon-close-btn"></use>
-                    </svg>
-                  </button>
-                  <!-- <div class="modal-container"> -->
-                  <b class="modal-tittle">Залиште свої дані, ми вам передзвонимо</b>
-                  <form class="modal-form js-speaker-form" id="tg">
-                    <label for="name" class="under">Ім'я</label>
-                    <div class="form-field">
-                      <input type="text" class="form-input" name="name" id="name" />
-                      <svg width="18" height="18" class="form-icon">
-                        <use href="./assets/img/icons.svg#icon-person-black-18dp-1"></use>
-                      </svg>
-                    </div>
-                    <label for="tel" class="under">Телефон</label>
-                    <div class="form-field">
-                      <input type="tel" class="form-input" name="tel" id="tel" />
-                      <svg width="18" height="18" class="form-icon">
-                        <use href="./assets/img/icons.svg#icon-phone-black-18dp-1"></use>
-                      </svg>
-                    </div>
-                    
-                    <label for="comment" class="under">Коментар</label>
-                    <textarea
-                      class="form-area"
-                      placeholder="Введіть текст"
-                      name="comment"
-                      id="comment"
-                    ></textarea>
-                    <p class="modal__phone">Або зателефонуйте нам по телефону: <br> <a href="tel:+380637125220" class="modal__link">+380637125220</a></p>
-                    <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 modal__alert" role="alert" id="succsess" style="display:none;">
-                        <span class="font-medium">Дякуємо за заявку!</span><br> Ваше звернення було успішно відправлене нашим менеджерам. <br> Ми зв’яжемося із вами у найближчий час.
-                      </div>
-                    <button type="submit" class="button-send">Відправити</button>
-                  </form>
-                  <!-- </div> -->
-                </div>
-              </div>
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <div class="home__container container grid">
-                    <div class="home__img-bg">
-                        <img src="assets/img/main.jpg" alt="" class="home__img">
-                    </div>
-    
-                    <div class="home__social">
-                        <a href="tel:+380637125220" target="_blank" class="home__social-link">
-                           +380637125220
-                        </a>
-                        <a href="mailto:pawhouse.uk@gmail.com" target="_blank" class="home__social-link">
-                            Gmail
-                        </a>
-                        <a href="https://www.instagram.com/pawhouse_uk" target="_blank" class="home__social-link">
-                            Instagram
-                        </a>
-                    </div>
-    
-                    <div class="home__data">
-                        <h1 class="home__title">При першому замовленні у нашому магазині <br> знижка 10% для знайомства!</h1>
-                        <!-- <p class="home__description">
-                            При першому замовленні у нашому магазині <br> знижка 10% для знайомства
-                        </p> -->
-                        <span class="products__old-price">2700грн</span>
-                        <span class="home__price">1849грн</span>
-
-                        <div class="home__btns">
-                            <a href="#products" class="button button--gray button--small">
-                                Знайти
-                            </a>
-
-                            <button class="button home__button" data-modal-open type="button">ЗАМОВИТИ</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
-
-             <!--==================== PRODUCTS ====================-->
-             <section class="products section container" id="products">
-                <h2 class="section__title">
-                    Сумки
-                </h2>
-
-                <div class="products__container grid">
-                    <article class="products__card">
-                        <img src="assets/img/bag7.jpg" alt="" height="450"  class="products__img">
-
-                        <h3 class="products__title">Adventure Black</h3>
-                        <span class="products__price">1849грн</span>
-                        <span class="products__old-price">2700грн</span>
-                        <button class="products__button" data-modal-open>Замовити
-                            <i class='bx bxs-phone-call' ></i>
-                        </button>
-                    </article>
-
-                    <article class="products__card">
-                        <img src="assets/img/bag8.jpg" alt="" class="products__img">
-
-                        <h3 class="products__title">Adventure Beige</h3>
-                        <span class="products__price">1849грн</span>
-                        <span class="products__old-price">2700грн</span>
-                        <button class="products__button" data-modal-open>Замовити
-                            <i class='bx bxs-phone-call' ></i>
-                        </button>
-                    </article>
-
-                    <article class="products__card">
-                        <img src="assets/img/bag1.jpg" alt="" class="products__img">
-
-                        <h3 class="products__title">Adventure Grey</h3>
-                        <span class="products__price">1849грн</span>
-                        <span class="products__old-price">2700грн</span>
-                        <button class="products__button" data-modal-open>Замовити
-                            <i class='bx bxs-phone-call' ></i>
-                        </button>
-                    </article>
-
-                    <article class="products__card">
-                        <img src="assets/img/featured1.jpg" alt="" class="products__img">
-
-                        <h3 class="products__title">Adventure Brown</h3>
-                        <span class="products__price">1849грн</span>
-                        <span class="products__old-price">2700грн</span>
-                        <button class="products__button" data-modal-open>Замовити
-                            <i class='bx bxs-phone-call' ></i>
-                        </button>
-                    </article>
-
-                    <article class="products__card">
-                        <img src="assets/img/bag5.jpg" alt="" class="products__img">
-
-                        <h3 class="products__title">Adventure Beige</h3>
-                        <span class="products__price">1849грн</span>
-                        <span class="products__old-price">2700грн</span>
-                        <button class="products__button" data-modal-open>Замовити
-                            <i class='bx bxs-phone-call' ></i>
-                        </button>
-                    </article>
-                    <article class="products__card">
-                     <img src="assets/img/bag6.jpg" alt="" class="products__img">
-
-                     <h3 class="products__title">Adventure Beige</h3>
-                     <span class="products__price">1849грн</span>
-                     <span class="products__old-price">2700грн</span>
-
-                     <button class="products__button" data-modal-open>Замовити
-                        <i class='bx bxs-phone-call' ></i>
-                     </button>
-                 </article>
-                </div>
-            </section>
-
-            
-            <!--==================== FEATURED ====================-->
-            <section class="featured section container" id="featured">
-                <h2 class="section__title">
-                    Популярні
-                </h2>
-
-                <div class="featured__container grid">
-                    <article class="featured__card">
-                        <span class="featured__tag">Sale</span>
-
-                        <img src="assets/img/featured1.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Adventure Brown</h3>
-                            <span class="products__old-price">2700грн</span>
-                            <span class="featured__price">1849грн</span>
-                            
-                        </div>
-
-                        <button class="button featured__button" data-modal-open type="button">ЗАМОВИТИ</button>
-                    </article>
-
-                    <article class="featured__card">
-                        <span class="featured__tag">Sale</span>
-
-                        <img src="assets/img/featured2.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Adventure Black</h3>
-                            <span class="products__old-price">2700грн</span>
-                            <span class="featured__price">1849грн</span>
-                            
-                        </div>
-
-                        <button class="button featured__button" data-modal-open>ЗАМОВИТИ</button>
-                    </article>
-
-                    <article class="featured__card">
-                        <span class="featured__tag">Sale</span>
-
-                        <img src="assets/img/featured3.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Adventure Grey</h3>
-                            <span class="products__old-price">2700грн</span>
-                            <span class="featured__price">1849грн</span>
-                            
-                        </div>
-
-                        <button class="button featured__button" data-modal-open>ЗАМОВИТИ</button>
-                    </article>
-                </div>
-            </section>
-
-            
-
-           
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section container">
-                <div class="testimonial__container grid">
-                    <div class="swiper testimonial-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="testimonial__card swiper-slide">
-                                <div class="testimonial__quote">
-                                    <i class='bx bxs-quote-alt-left' ></i>
-                                </div>
-                                <p class="testimonial__description">
-                                    Дякую вам за чудове обслуговування! Я придбав сумку для перенесення кішки, і вона виявилася дуже зручною. Кішка почувається спокійно всередині, і це дійсно полегшило нашу подорож. Дуже задоволений покупкою.
-                                </p>
-                                <h3 class="testimonial__date">Березень 27. 2021</h3>
-        
-                                <div class="testimonial__perfil">
-                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
-        
-                                    <div class="testimonial__perfil-data">
-                                        <span class="testimonial__perfil-name">Макс</span>
-                                        <span class="testimonial__perfil-detail">Кішка</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonial__card swiper-slide">
-                                <div class="testimonial__quote">
-                                    <i class='bx bxs-quote-alt-left' ></i>
-                                </div>
-                                <p class="testimonial__description">
-                                    Ваш магазин став для мене справжнім порятунком. У мене дві кішки, і з вашою сумкою для перенесення я можу легко та без стресу перевозити їх у ветеринарну клініку. Якість матеріалів та зручність використання роблять цей продукт незамінним. Велике дякую!
-                                </p>
-                                <h3 class="testimonial__date">Листопад 27. 2022</h3>
-        
-                                <div class="testimonial__perfil">
-                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
-        
-                                    <div class="testimonial__perfil-data">
-                                        <span class="testimonial__perfil-name">Ольга</span>
-                                        <span class="testimonial__perfil-detail">2 Кішки</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonial__card swiper-slide">
-                                <div class="testimonial__quote">
-                                    <i class='bx bxs-quote-alt-left' ></i>
-                                </div>
-                                <p class="testimonial__description">
-                                    Я купив сумку для перенесення собаки у вас, і вона просто чудова! Наш маленький песик тепер почувається комфортно і безпечно в дорозі. Якість сумки на висоті, і вона виглядає стильно. Дякуємо за відмінний продукт!
-                                </p>
-                                <h3 class="testimonial__date">Грудень 03. 2022</h3>
-        
-                                <div class="testimonial__perfil">
-                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
-        
-                                    <div class="testimonial__perfil-data">
-                                        <span class="testimonial__perfil-name">Роман</span>
-                                        <span class="testimonial__perfil-detail">Собака</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-button-next">
-                            <i class='bx bx-right-arrow-alt' ></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class='bx bx-left-arrow-alt' ></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial__images">
-                        <div class="testimonial__square"></div>
-                        <img src="assets/img/we.jpg" alt="" class="testimonial__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== NEW ====================-->
-            <section class="new section container" id="new">
-                <h2 class="section__title">
-                    Про нас
-                </h2>
-                
-                <div class="new__container">
-                    <div class="swiper new-swiper">
-                        <div class="swiper-wrapper">
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">5</span>
-        
-                                <i class='bx bxs-time bx-lg' ></i>
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">5 років <br> на ринку</h3>
-                                    
-                                </div>
-        
-                                
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">27000</span>
-        
-                                <i class='bx bxs-user-check bx-lg'></i>
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Більше 27тис задоволених клієнтів</h3>
-                                    
-                                </div>
-        
-                                
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">ЮСА</span>
-        
-                                <i class='bx bx-line-chart bx-lg' ></i>
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Лідер продажів <br> переносок в ЮСА 2022</h3>
-                                    
-                                </div>
-        
-                                
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">70</span>
-        
-                                <i class='bx bxs-business bx-lg' ></i>
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">співпрацюємо з містами <br> Європи та Америки</h3>
-                                    
-                                </div>
-        
-                               
-                            </article>
-                            
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">3</span>
-        
-                                <i class='bx bxs-hand bx-lg' ></i>
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Гарантія на продукцію 3 роки</h3>
-                                    
-                                </div>
-        
-                                
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <span class="new__tag">/</span>
-        
-                                <i class='bx bxs-spray-can bx-lg' ></i>
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Санітарна обробка продукції кожному етапі </h3>
-                                    
-                                </div>
-        
-                               
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== NEWSLETTER ====================-->
-            <section class="newsletter section container">
-                <div class="newsletter__bg grid">
-                    <div>
-                        <h2 class="newsletter__title">Підпишіться на нашу розсилку</h2>
-                        <p class="newsletter__description">
-                            Не пропустіть свої знижки. Підпишіться на нашу електронну пошту
-                            інформаційний бюлетень, щоб отримувати найкращі пропозиції, знижки, купони,
-                            подарунки та багато іншого.
-                        </p>
-                    </div>
-
-                    <form action="" class="newsletter__subscribe">
-                        <input type="email" placeholder="Ведіть ваш email" class="newsletter__input">
-                        <button class="button">
-                            Підписатися
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Наша інформація</h3>
-
-                    <ul class="footer__list">
-                        <li>Україна</li>
-                        <li>м.Ужгород</li>
-                        <li>+380637125220</li>
-                    </ul>
-                </div>
-                
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Соціальні мережі</h3>
-
-                    <ul class="footer__social">
-                        <a href="mailto:pawhouse.uk@gmail.com" target="_blank" class="footer__social-link">
-                            <i class='bx bxl-gmail' ></i>
-                        </a>
-
-                        <a href="tel:+380637125220" target="_blank" class="footer__social-link">
-                            <i class='bx bxs-phone-call' ></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/pawhouse_uk" target="_blank" class="footer__social-link">
-                            <i class='bx bxl-instagram' ></i>
-                        </a>
-                    </ul>
-                </div>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-button" data-modal-close name="close-button">
+            <svg class="modal-icon" width="11" height="11">
+              <use href="./assets/img/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <!-- <div class="modal-container"> -->
+          <b class="modal-tittle">Залиште свої дані, ми вам передзвонимо</b>
+          <form class="modal-form js-speaker-form" id="tg">
+            <label for="name" class="under">Ім'я</label>
+            <div class="form-field">
+              <input type="text" class="form-input" name="name" id="name" />
+              <svg width="18" height="18" class="form-icon">
+                <use href="./assets/img/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+            <label for="tel" class="under">Телефон</label>
+            <div class="form-field">
+              <input type="tel" class="form-input" name="tel" id="tel" />
+              <svg width="18" height="18" class="form-icon">
+                <use href="./assets/img/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
             </div>
 
-        </footer>
-        
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up"> 
-            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
-        </a>
+            <label for="comment" class="under">Коментар</label>
+            <textarea
+              class="form-area"
+              placeholder="Введіть текст"
+              name="comment"
+              id="comment"
+            ></textarea>
+            <p class="modal__phone">
+              Або зателефонуйте нам по телефону: <br />
+              <a href="tel:+380637125220" class="modal__link">+380637125220</a>
+            </p>
+            <div
+              class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 modal__alert"
+              role="alert"
+              id="succsess"
+              style="display: none"
+            >
+              <span class="font-medium">Дякуємо за заявку!</span><br />
+              Ваше звернення було успішно відправлене нашим менеджерам. <br />
+              Ми зв’яжемося із вами у найближчий час.
+            </div>
+            <button type="submit" class="button-send" id="submit-button">Відправити</button>
+              Відправити
+            </button>
+            
+          </form>
+          <!-- </div> -->
+        </div>
+      </div>
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__img-bg">
+            <img src="assets/img/main.jpg" alt="" class="home__img" />
+          </div>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="./assets/js/swiper-bundle.min.js"></script>
+          <div class="home__social">
+            <a href="tel:+380637125220" target="_blank" class="home__social-link">
+              +380637125220
+            </a>
+            <a href="mailto:pawhouse.uk@gmail.com" target="_blank" class="home__social-link">
+              Gmail
+            </a>
+            <a
+              href="https://www.instagram.com/pawhouse_uk"
+              target="_blank"
+              class="home__social-link"
+            >
+              Instagram
+            </a>
+          </div>
 
-        
-        <script src="./assets/js/modal.js"></script>
-        <!--=============== MAIN JS ===============-->
-        <script src="./assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-        <script src="./assets/js/tg.js"></script>
-        
-    </body>
+          <div class="home__data">
+            <h1 class="home__title">
+              При першому замовленні у нашому магазині <br />
+              знижка 10% для знайомства!
+            </h1>
+            <!-- <p class="home__description">
+                            При першому замовленні у нашому магазині <br> знижка 10% для знайомства
+                        </p> -->
+            <span class="products__old-price">2700грн</span>
+            <span class="home__price">1849грн</span>
+
+            <div class="home__btns">
+              <a href="#products" class="button button--gray button--small"> Знайти </a>
+
+              <button class="button home__button" data-modal-open type="button">ЗАМОВИТИ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section container" id="products">
+        <h2 class="section__title">Сумки</h2>
+
+        <div class="products__container grid">
+          <article class="products__card">
+            <img src="assets/img/bag7.jpg" alt="" height="450" class="products__img" />
+
+            <h3 class="products__title">Adventure Black</h3>
+            <span class="products__price">1849грн</span>
+            <span class="products__old-price">2700грн</span>
+            <button class="products__button" data-modal-open>
+              Замовити
+              <i class="bx bxs-phone-call"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img src="assets/img/bag8.jpg" alt="" class="products__img" />
+
+            <h3 class="products__title">Adventure Beige</h3>
+            <span class="products__price">1849грн</span>
+            <span class="products__old-price">2700грн</span>
+            <button class="products__button" data-modal-open>
+              Замовити
+              <i class="bx bxs-phone-call"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img src="assets/img/bag1.jpg" alt="" class="products__img" />
+
+            <h3 class="products__title">Adventure Grey</h3>
+            <span class="products__price">1849грн</span>
+            <span class="products__old-price">2700грн</span>
+            <button class="products__button" data-modal-open>
+              Замовити
+              <i class="bx bxs-phone-call"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img src="assets/img/featured1.jpg" alt="" class="products__img" />
+
+            <h3 class="products__title">Adventure Brown</h3>
+            <span class="products__price">1849грн</span>
+            <span class="products__old-price">2700грн</span>
+            <button class="products__button" data-modal-open>
+              Замовити
+              <i class="bx bxs-phone-call"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img src="assets/img/bag5.jpg" alt="" class="products__img" />
+
+            <h3 class="products__title">Adventure Beige</h3>
+            <span class="products__price">1849грн</span>
+            <span class="products__old-price">2700грн</span>
+            <button class="products__button" data-modal-open>
+              Замовити
+              <i class="bx bxs-phone-call"></i>
+            </button>
+          </article>
+          <article class="products__card">
+            <img src="assets/img/bag6.jpg" alt="" class="products__img" />
+
+            <h3 class="products__title">Adventure Beige</h3>
+            <span class="products__price">1849грн</span>
+            <span class="products__old-price">2700грн</span>
+
+            <button class="products__button" data-modal-open>
+              Замовити
+              <i class="bx bxs-phone-call"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== FEATURED ====================-->
+      <section class="featured section container" id="featured">
+        <h2 class="section__title">Популярні</h2>
+
+        <div class="featured__container grid">
+          <article class="featured__card">
+            <span class="featured__tag">Sale</span>
+
+            <img src="assets/img/featured1.jpg" alt="" class="featured__img" />
+
+            <div class="featured__data">
+              <h3 class="featured__title">Adventure Brown</h3>
+              <span class="products__old-price">2700грн</span>
+              <span class="featured__price">1849грн</span>
+            </div>
+
+            <button class="button featured__button" data-modal-open type="button">ЗАМОВИТИ</button>
+          </article>
+
+          <article class="featured__card">
+            <span class="featured__tag">Sale</span>
+
+            <img src="assets/img/featured2.jpg" alt="" class="featured__img" />
+
+            <div class="featured__data">
+              <h3 class="featured__title">Adventure Black</h3>
+              <span class="products__old-price">2700грн</span>
+              <span class="featured__price">1849грн</span>
+            </div>
+
+            <button class="button featured__button" data-modal-open>ЗАМОВИТИ</button>
+          </article>
+
+          <article class="featured__card">
+            <span class="featured__tag">Sale</span>
+
+            <img src="assets/img/featured3.jpg" alt="" class="featured__img" />
+
+            <div class="featured__data">
+              <h3 class="featured__title">Adventure Grey</h3>
+              <span class="products__old-price">2700грн</span>
+              <span class="featured__price">1849грн</span>
+            </div>
+
+            <button class="button featured__button" data-modal-open>ЗАМОВИТИ</button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section container">
+        <div class="testimonial__container grid">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  Дякую вам за чудове обслуговування! Я придбав сумку для перенесення кішки, і вона
+                  виявилася дуже зручною. Кішка почувається спокійно всередині, і це дійсно
+                  полегшило нашу подорож. Дуже задоволений покупкою.
+                </p>
+                <h3 class="testimonial__date">Березень 27. 2021</h3>
+
+                <div class="testimonial__perfil">
+                  <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img" />
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">Макс</span>
+                    <span class="testimonial__perfil-detail">Кішка</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  Ваш магазин став для мене справжнім порятунком. У мене дві кішки, і з вашою сумкою
+                  для перенесення я можу легко та без стресу перевозити їх у ветеринарну клініку.
+                  Якість матеріалів та зручність використання роблять цей продукт незамінним. Велике
+                  дякую!
+                </p>
+                <h3 class="testimonial__date">Листопад 27. 2022</h3>
+
+                <div class="testimonial__perfil">
+                  <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img" />
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">Ольга</span>
+                    <span class="testimonial__perfil-detail">2 Кішки</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  Я купив сумку для перенесення собаки у вас, і вона просто чудова! Наш маленький
+                  песик тепер почувається комфортно і безпечно в дорозі. Якість сумки на висоті, і
+                  вона виглядає стильно. Дякуємо за відмінний продукт!
+                </p>
+                <h3 class="testimonial__date">Грудень 03. 2022</h3>
+
+                <div class="testimonial__perfil">
+                  <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img" />
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">Роман</span>
+                    <span class="testimonial__perfil-detail">Собака</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-left-arrow-alt"></i>
+            </div>
+          </div>
+
+          <div class="testimonial__images">
+            <div class="testimonial__square"></div>
+            <img src="assets/img/we.jpg" alt="" class="testimonial__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== NEW ====================-->
+      <section class="new section container" id="new">
+        <h2 class="section__title">Про нас</h2>
+
+        <div class="new__container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <article class="new__card swiper-slide">
+                <span class="new__tag">5</span>
+
+                <i class="bx bxs-time bx-lg"></i>
+
+                <div class="new__data">
+                  <h3 class="new__title">
+                    5 років <br />
+                    на ринку
+                  </h3>
+                </div>
+              </article>
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">27000</span>
+
+                <i class="bx bxs-user-check bx-lg"></i>
+
+                <div class="new__data">
+                  <h3 class="new__title">Більше 27тис задоволених клієнтів</h3>
+                </div>
+              </article>
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">ЮСА</span>
+
+                <i class="bx bx-line-chart bx-lg"></i>
+
+                <div class="new__data">
+                  <h3 class="new__title">
+                    Лідер продажів <br />
+                    переносок в ЮСА 2022
+                  </h3>
+                </div>
+              </article>
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">70</span>
+
+                <i class="bx bxs-business bx-lg"></i>
+
+                <div class="new__data">
+                  <h3 class="new__title">
+                    співпрацюємо з містами <br />
+                    Європи та Америки
+                  </h3>
+                </div>
+              </article>
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">3</span>
+
+                <i class="bx bxs-hand bx-lg"></i>
+
+                <div class="new__data">
+                  <h3 class="new__title">Гарантія на продукцію 3 роки</h3>
+                </div>
+              </article>
+
+              <article class="new__card swiper-slide">
+                <span class="new__tag">/</span>
+
+                <i class="bx bxs-spray-can bx-lg"></i>
+
+                <div class="new__data">
+                  <h3 class="new__title">Санітарна обробка продукції кожному етапі</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== NEWSLETTER ====================-->
+      <section class="newsletter section container">
+        <div class="newsletter__bg grid">
+          <div>
+            <h2 class="newsletter__title">Підпишіться на нашу розсилку</h2>
+            <p class="newsletter__description">
+              Не пропустіть свої знижки. Підпишіться на нашу електронну пошту інформаційний
+              бюлетень, щоб отримувати найкращі пропозиції, знижки, купони, подарунки та багато
+              іншого.
+            </p>
+          </div>
+
+          <form action="" class="newsletter__subscribe">
+            <input type="email" placeholder="Ведіть ваш email" class="newsletter__input" />
+            <button class="button">Підписатися</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <h3 class="footer__title">Наша інформація</h3>
+
+          <ul class="footer__list">
+            <li>Україна</li>
+            <li>м.Ужгород</li>
+            <li>+380637125220</li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Соціальні мережі</h3>
+
+          <ul class="footer__social">
+            <a href="mailto:pawhouse.uk@gmail.com" target="_blank" class="footer__social-link">
+              <i class="bx bxl-gmail"></i>
+            </a>
+
+            <a href="tel:+380637125220" target="_blank" class="footer__social-link">
+              <i class="bx bxs-phone-call"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/pawhouse_uk"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/modal.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./assets/js/tg.js"></script>
+    
+  </body>
 </html>
