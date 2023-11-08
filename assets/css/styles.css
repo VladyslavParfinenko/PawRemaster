@@ -172,7 +172,7 @@ body.dark-theme {
 
 .section__title {
   position: relative;
-  font-size: var(--h3-font-size);
+  font-size: var(--h1-font-size);
   margin-bottom: var(--mb-3);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -232,7 +232,7 @@ body.dark-theme {
 
 .nav__btns {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   column-gap: 1rem;
 }
 
@@ -1090,6 +1090,7 @@ overflow: hidden;
 
   .story__section-title {
     text-align: initial;
+    
   }
   .story__section-title::before {
     margin: initial;
@@ -1133,7 +1134,7 @@ overflow: hidden;
 
 @media screen and (min-width: 992px) {
   .section__title {
-    font-size: var(--h2-font-size);
+    font-size: var(--h1-font-size);
   }
 
   .home__container {
