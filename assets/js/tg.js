@@ -18,10 +18,12 @@ document.getElementById("tg").addEventListener('submit',function(e){
         text:message
     })
     .then((res) =>{
+        window.location.href = "/form.html";
         this.name.value='';
         this.tel.value='';
         this.comment.value='';
         success.style.display = 'inline-block';
+        
     })
     .catch((err) =>{
         console.warn(err);
